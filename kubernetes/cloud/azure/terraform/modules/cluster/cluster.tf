@@ -15,7 +15,7 @@ resource "azurerm_kubernetes_cluster" "aks-getting-started" {
     node_count = 1
     vm_size    = "Standard_E4s_v3"
     type       = "VirtualMachineScaleSets"
-    os_disk_size_gb = 250
+    os_disk_size_gb = 50
   }
 
   service_principal  {
@@ -59,14 +59,13 @@ resource "azurerm_kubernetes_cluster" "aks-getting-started" {
 
 }
 
-/*
+
 resource "azurerm_kubernetes_cluster_node_pool" "monitoring" {
   name                  = "monitoring"
   kubernetes_cluster_id = azurerm_kubernetes_cluster.aks-getting-started.id
   vm_size               = "Standard_DS2_v2"
   node_count            = 1
-  os_disk_size_gb       = 250
+  os_disk_size_gb       = 50
   os_type               = "Linux"
 }
 
-*/
