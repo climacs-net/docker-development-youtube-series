@@ -32,7 +32,7 @@ resource "azurerm_kubernetes_cluster" "aks-getting-started" {
 
   network_profile {
       network_plugin = "kubenet"
-      load_balancer_sku = "Basic Standard"
+      load_balancer_sku = "basic standard"
   }
   /*
   addon_profile {
