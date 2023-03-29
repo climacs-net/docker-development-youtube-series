@@ -34,7 +34,7 @@ resource "azurerm_kubernetes_cluster" "aks-getting-started" {
       network_plugin = "kubenet"
       load_balancer_sku = "Standard"
   }
-
+  /*
   addon_profile {
     aci_connector_linux {
       enabled = false
@@ -56,6 +56,7 @@ resource "azurerm_kubernetes_cluster" "aks-getting-started" {
       enabled = false
     }
   }
+  */
 
 }
 
